@@ -1,4 +1,4 @@
-import credentials
+from spacetraders import credentials
 from spacetraders.agent import Agent
 from spacetraders.spacetraders_api import SpaceTradersConnection
 
