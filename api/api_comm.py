@@ -1,18 +1,14 @@
 import requests
 
 
-def test_func():
-    return 42
-
-
 class APICommunication:
     def __init__(self, base_url):
         self.base_url = base_url
 
-    def send_get_request(self, endpoint, params=None, headers=None):
+    def send_get_request(self, endpoint, params=None, headers=None) -> requests.Response:
         url = self.base_url + endpoint
-        response = requests.get(url, params=params, headers=headers)
-        return response.json()
+        return requests.get(
+            url, params=params, headers=headers, timeout=10)
 
     def send_post_request(self, endpoint, data=None, headers=None):
         url = self.base_url + endpoint
