@@ -3,5 +3,5 @@ SpaceTraders is an API-based game where you acquire and manage a fleet of ships 
 
 ## Methodology
 1. Create agent
-1. Step 2
+1. View contracts
 1. Step 3
